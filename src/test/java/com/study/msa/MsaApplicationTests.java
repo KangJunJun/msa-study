@@ -1,10 +1,10 @@
-package com.study.mas;
+package com.study.msa;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class MasApplicationTests {
+class MsaApplicationTests {
 
 	@Test
 	void contextLoads() {
