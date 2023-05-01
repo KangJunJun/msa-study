@@ -1,25 +1,6 @@
-plugins {
-    id 'java'
-    id 'org.springframework.boot' version '3.0.6'
-}
-
-group = 'com.study'
-version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '17'
-
-repositories {
-    mavenCentral()
-}
 
 dependencies {
-    //testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
-    //testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
-
     implementation 'org.springframework.boot:spring-boot-starter-web'
-    implementation 'org.springframework.boot:spring-boot-actuator:2.1.7.RELEASE'
-    implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-server:2.1.2.RELEASE'
+    implementation 'org.springframework.boot:spring-boot-actuator:3.0.6'
+    implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-server:4.0.0'
 }
-
-//test {
-//    useJUnitPlatform()
-//}
