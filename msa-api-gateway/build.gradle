@@ -1,0 +1,25 @@
+
+plugins {
+    id 'org.springframework.boot' version '3.0.6'
+    id 'io.spring.dependency-management' version '1.0.10.RELEASE'
+    id 'java'
+}
+
+sourceCompatibility = '17'
+repositories {
+    mavenCentral()
+}
+
+
+
+dependencies {
+    //implementation 'org.springframework.cloud:spring-cloud-config-server:4.0.1'
+    implementation 'org.springframework.cloud:spring-cloud-starter-gateway:4.0.3'
+    implementation 'org.springframework.cloud:spring-cloud-starter-loadbalancer:4.0.1'
+    developmentOnly 'org.springframework.boot:spring-boot-devtools'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+test {
+    useJUnitPlatform()
+}
