@@ -1,5 +1,4 @@
 rootProject.name = 'msa'
 include 'eureka-server'
-include 'server-eureka'
-
+include 'msa-user'
 

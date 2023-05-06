@@ -1,0 +1,32 @@
+
+plugins {
+    id 'org.springframework.boot' version '3.0.6'
+    id 'io.spring.dependency-management' version '1.0.10.RELEASE'
+    id 'java'
+}
+
+sourceCompatibility = '17'
+repositories {
+    mavenCentral()
+}
+
+
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.2'
+    implementation 'org.springframework:spring-web:6.0.6'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-actuator:3.0.6'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa:3.0.6'
+    implementation 'io.springfox:springfox-swagger2:3.0.0'
+    implementation 'io.springfox:springfox-swagger-ui:3.0.0'
+    implementation 'com.h2database:h2:2.1.214'
+    implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:4.0.0'
+    implementation 'org.springframework.cloud:spring-cloud-starter-netflix-hystrix:2.2.10.RELEASE'
+}
+
+test {
+    useJUnitPlatform()
+}
